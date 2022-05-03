@@ -1,0 +1,49 @@
+﻿<Window x:Class="Velvet_brows.Views.AddPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Velvet_brows.Views"
+        mc:Ignorable="d"
+        Title="Редактирование" Height="500" Width="450">
+    <Grid>
+        <StackPanel Orientation="Vertical" Width="400">
+
+            <Label Content="Редактирование услуги" HorizontalAlignment="Center" FontSize="17" FontWeight="DemiBold" FontFamily="Tahoma" />
+            <Border BorderThickness="1" BorderBrush="Black" Height="25" Margin="10">
+
+                <TextBox x:Name="TitleText"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Height="25" Margin="10">
+
+                <TextBox x:Name="CostTetxt"/>
+            </Border>
+
+            <Border BorderThickness="1" BorderBrush="Black" Height="25" Margin="10">
+
+                <TextBox x:Name="DurText"/>
+            </Border>
+            
+            <Border BorderThickness="1" BorderBrush="Black" Height="25" Margin="10">
+
+                <TextBox x:Name="DesciptionTetxt"/>
+            </Border>
+
+            <Border BorderThickness="1" BorderBrush="Black" Height="25" Margin="10">
+
+                <TextBox x:Name="DiscountTetxt"/>
+            </Border>
+
+            <Border BorderThickness="1" BorderBrush="Black" Height="25" Margin="10">
+                <Button x:Name="openImg" Click="openImg_Click" Content="Выбрать картинку"/>
+                
+            </Border>
+            <TextBox x:Name="ImgText" />
+            <Button Height="50" Width="Auto" FontSize="19" FontFamily="Tahoma" Background="White" Click="Button_ClickUp" Margin="10" >Сохранить</Button>
+
+            <Button Height="50" Width="Auto" FontSize="19" FontFamily="Tahoma" Background="White" Click="Button_ClickNazad" Margin="10">Назад</Button>
+
+
+        </StackPanel>
+    </Grid>
+</Window>

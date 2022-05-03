@@ -1,0 +1,52 @@
+﻿<Window x:Class="Velvet_brows.Views.AddPege"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Velvet_brows.Views"
+      mc:Ignorable="d" 
+      Title="Добавление" Height="760" Width="600">
+    <Grid>
+        <StackPanel Orientation="Vertical" Width="400">
+            <Label Content="Добавление услуги" HorizontalAlignment="Center" FontSize="17" FontWeight="DemiBold" FontFamily="Tahoma"/>
+            <Label Content="Название услуги" HorizontalAlignment="Center" FontSize="16"/>
+            <Border BorderThickness="1" BorderBrush="Black" Height="39" Margin="10">
+
+                <TextBox x:Name="TitleText"  PreviewTextInput="TitleText_PreviewTextInput_1"  />
+            </Border>
+            <Label Content="Цена" HorizontalAlignment="Center" FontSize="16"/>
+            <Border BorderThickness="1" BorderBrush="Black" Height="39" Margin="10">
+
+                <TextBox x:Name="CostTetxt" PreviewTextInput="CostTetxt_PreviewTextInput" />
+            </Border>
+            <Label Content="Продолжительность" HorizontalAlignment="Center" FontSize="16"/>
+            <Border BorderThickness="1" BorderBrush="Black" Height="39" Margin="10">
+
+                <TextBox x:Name="DurText" PreviewTextInput="DurTetxt_PreviewTextInput"/>
+            </Border>
+            <Label Content="Описание" HorizontalAlignment="Center" FontSize="16"/>
+            <Border BorderThickness="1" BorderBrush="Black" Height="39" Margin="10">
+
+                <TextBox x:Name="DescText" PreviewTextInput="DescText_PreviewTextInput" />
+            </Border>
+            <Label Content="Скидка" HorizontalAlignment="Center" FontSize="16"/>
+            <Border BorderThickness="1" BorderBrush="Black" Height="39" Margin="10">
+
+                <TextBox x:Name="DiscountText" />
+            </Border>
+            <Label Content="Картинка" HorizontalAlignment="Center" FontSize="16"/>
+            <Button  Click="add_img" Width="140">Добавить картинку</Button>
+            <Border BorderThickness="1" BorderBrush="Black" Height="39" Margin="10">
+
+                <TextBox x:Name="ImgText" />
+
+
+            </Border>
+            <Button Height="50" Width="Auto" FontSize="19" FontFamily="Tahoma" Background="White" Click="Button_Click"  Margin="10" Content="Добавить"/>
+
+            <Button Height="50" Width="Auto" FontSize="19" FontFamily="Tahoma" Background="White" Click="Button_ClickNazad" Margin="10">Назад</Button>
+
+
+        </StackPanel>
+    </Grid>
+    </Window>

@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FE0B2470-273D-46FF-8D04-6AFB78400498}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Velvet_brows</RootNamespace>
+    <AssemblyName>Velvet_brows</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Beaute.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Beaute.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Beaute.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Beaute.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Beaute.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Beaute.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Client.cs">
+      <DependentUpon>Beaute.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientService.cs">
+      <DependentUpon>Beaute.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentByService.cs">
+      <DependentUpon>Beaute.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Gender.cs">
+      <DependentUpon>Beaute.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacturer.cs">
+      <DependentUpon>Beaute.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>Beaute.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductPhoto.cs">
+      <DependentUpon>Beaute.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSale.cs">
+      <DependentUpon>Beaute.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Service.cs">
+      <DependentUpon>Beaute.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServicePhoto.cs">
+      <DependentUpon>Beaute.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tag.cs">
+      <DependentUpon>Beaute.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddPage.xaml.cs">
+      <DependentUpon>AddPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddPege.xaml.cs">
+      <DependentUpon>AddPege.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminLoginPage.xaml.cs">
+      <DependentUpon>AdminLoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminPanelPage.xaml.cs">
+      <DependentUpon>AdminPanelPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UpcomingEntriesPage.xaml.cs">
+      <DependentUpon>UpcomingEntriesPage.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Views\AddPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddPege.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AdminLoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AdminPanelPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Views\UpcomingEntriesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EntityDeploy Include="Beaute.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Beaute.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Beaute.edmx.diagram">
+      <DependentUpon>Beaute.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG\beauty_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG\beauty_logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Beaute.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Beaute.Context.cs</LastGenOutput>
+      <DependentUpon>Beaute.edmx</DependentUpon>
+    </Content>
+    <Content Include="Beaute.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Beaute.edmx</DependentUpon>
+      <LastGenOutput>Beaute.cs</LastGenOutput>
+    </Content>
+    <Content Include="BrowsVelvet.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BrowsVelvet_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>BrowsVelvet.mdf</DependentUpon>
+    </Content>
+    <Resource Include="IMG\122454.png" />
+    <Resource Include="IMG\96.png" />
+    <Resource Include="IMG\face.png" />
+    <Resource Include="IMG\makeup.jpg" />
+    <Resource Include="IMG\man.png" />
+    <Resource Include="IMG\mask.jpeg" />
+    <Resource Include="IMG\piling.jpg" />
+    <Resource Include="IMG\soliarij.jpg" />
+    <Resource Include="IMG\брови.png" />
+    <Resource Include="IMG\Гречишный массаж.jpg" />
+    <Resource Include="IMG\Декорирование нарощенных ресниц стразами.jpg" />
+    <Resource Include="IMG\Демакияж.jpg" />
+    <Resource Include="IMG\Депиляция воском.jpg" />
+    <Resource Include="IMG\Европейский маникюр.jpg" />
+    <Resource Include="IMG\ИК-сауна.jpg" />
+    <Resource Include="IMG\Классический маникюр.png" />
+    <Resource Include="IMG\Комбинированный маникюр.jpg" />
+    <Resource Include="IMG\Контурная пластика.jpg" />
+    <Resource Include="IMG\массаж.jpg" />
+    <Resource Include="IMG\Мезотерапия.jpg" />
+    <Resource Include="IMG\Моделирование ресниц.jpg" />
+    <Resource Include="IMG\ногти.png" />
+    <Resource Include="IMG\Окрашивание бровей.jpg" />
+    <Resource Include="IMG\Парафинотерапия.jpg" />
+    <Resource Include="IMG\Покрытие ногтей гель-лаком.jpg" />
+    <Resource Include="IMG\Полировка ногтей.jpg" />
+    <Resource Include="IMG\Прессотерапия.jpg" />
+    <Resource Include="IMG\Прокол ушей пистолетом.png" />
+    <Resource Include="IMG\Ресницы.png" />
+    <Resource Include="IMG\Снятие ресниц.jpg" />
+    <Resource Include="IMG\Стоун-терапия.jpg" />
+    <Resource Include="IMG\стрижка.png" />
+    <Resource Include="IMG\Укрепление ногтей гелем.jpg" />
+    <Resource Include="IMG\Шугаринг.jpg" />
+    <Resource Include="IMG\Экспресс SPA.png" />
+    <Resource Include="IMG\Экспресс-педикюр.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
