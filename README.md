@@ -1,6 +1,6 @@
 ## Table of Contents
-1. [Getting Started](#Getting Started-work)
-2. [Project Installation](#Project Installation)
+1. [Getting Started](#Getting-Started-work)
+2. [Project Installation](#Project-Installation)
 3. [Authors](#Authors)
 
 # Velvet brows
