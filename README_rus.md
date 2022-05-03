@@ -24,6 +24,6 @@
 
 ## Авторы
 
-* ** Виталий Чистяков** - *Начальная работа* - [zadan1](https://github.com/MOLOKOCOC/zadan1.git)
+* **Виталий Чистяков** - *Начальная работа* - [zadan1](https://github.com/MOLOKOCOC/zadan1.git)
 
 Смотрите также список [участников](https://github.com/MOLOKOCOC), участвовавших в этом проекте.
